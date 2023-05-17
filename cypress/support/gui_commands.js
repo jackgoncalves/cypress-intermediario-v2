@@ -15,7 +15,7 @@ Cypress.Commands.add('loginValido', (
     const validate = (()=>{
         cy.visit('/')
         cy.location('pathname', { timeout: 1000})
-            .should('not.equal', '/user_sign_in')
+            .should('not.equal', '/users/sign_in')
     })
 
     
